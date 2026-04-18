@@ -1,0 +1,17 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "studio-bg-white",
+      "description": "Elite studio white background.",
+      "imageUrl": "https://picsum.photos/seed/photornz-studio-white/1920/1080",
+      "imageHint": "white studio"
+    },
+    {
+      "id": "architect-profile",
+      "description": "Lead Architect profile image.",
+      "imageUrl": "https://picsum.photos/seed/lzyrnz-architect/600/800",
+      "imageHint": "developer portrait"
+    }
+  ]
+}

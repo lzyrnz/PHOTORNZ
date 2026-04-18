@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 0%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-primary/10 overflow-x-hidden;
+  }
+}
+
+.font-headline {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Studio Effects */
+.scanline {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.03) 50%, transparent);
+  position: absolute;
+  top: -100px;
+  left: 0;
+  pointer-events: none;
+  z-index: 50;
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.grid-overlay {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+@keyframes letter-snap {
+  0%, 100% { 
+    transform: scale(1); 
+    filter: brightness(1) blur(0);
+    opacity: 1;
+  }
+  5% { 
+    transform: scale(1.15); 
+    filter: brightness(3) blur(2px);
+    opacity: 0.8;
+  }
+  15% { 
+    transform: scale(0.95); 
+    filter: brightness(1) blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes float-3d {
+  0%, 100% { 
+    transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
+  }
+  25% { 
+    transform: translate3d(5px, -60px, 60px) rotateX(10deg) rotateY(-12deg) rotateZ(4deg); 
+  }
+  50% { 
+    transform: translate3d(-10px, 20px, -40px) rotateX(-8deg) rotateY(15deg) rotateZ(-3deg); 
+  }
+  75% { 
+    transform: translate3d(5px, -30px, 30px) rotateX(5deg) rotateY(-8deg) rotateZ(2deg); 
+  }
+}
+
+@keyframes roam-3d-expanded {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  25% { transform: translate3d(25vw, -15vh, 150px) rotate(15deg); }
+  50% { transform: translate3d(-20vw, 30vh, -100px) rotate(-10deg); }
+  75% { transform: translate3d(15vw, 10vh, 80px) rotate(5deg); }
+  100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -20px, 0); }
+}
+
+.animate-letter-snap {
+  animation: letter-snap 4s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+.animate-float-3d {
+  animation: float-3d 18s ease-in-out infinite;
+}
+
+.animate-roam-3d {
+  animation: roam-3d-expanded 30s ease-in-out infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.text-glow {
+  text-shadow: 0 0 45px rgba(0,0,0,0.15);
+}
+
+.shutter-reveal {
+  animation: shutter-open 1.6s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+}
+
+@keyframes shutter-open {
+  0% { clip-path: inset(50% 0 50% 0); filter: brightness(0); transform: scale(1.1); }
+  100% { clip-path: inset(0 0 0 0); filter: brightness(1); transform: scale(1); }
+}

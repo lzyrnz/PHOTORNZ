@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "prop-party-hat",
+      "description": "A colorful party hat.",
+      "imageUrl": "https://images.unsplash.com/photo-1601567105637-3fd76dfbe152?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYXJ0eSUyMGhhdHxlbnwwfHx8fDE3NjY1ODk3ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "party hat"
+    },
+    {
+      "id": "prop-sunglasses",
+      "description": "Cool pixelated sunglasses.",
+      "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdW5nbGFzc2VzfGVufDB8fHx8MTc2NjU1NjAzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sunglasses"
+    },
+    {
+      "id": "prop-mustache",
+      "description": "A classic curly mustache.",
+      "imageUrl": "https://images.unsplash.com/photo-1675622135496-44a55b74a16c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtdXN0YWNoZXxlbnwwfHx8fDE3NjY1Nzk3NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mustache"
+    },
+    {
+      "id": "prop-crown",
+      "description": "A royal golden crown.",
+      "imageUrl": "https://images.unsplash.com/photo-1578925518470-4def7a0f08bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjcm93bnxlbnwwfHx8fDE3NjY1ODk3ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "crown"
+    },
+    {
+      "id": "dashboard-hero",
+      "description": "Hero image for dashboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkYXRhJTIwdmlzdWFsaXphdGlvbnxlbnwwfHx8fDE3NjY1NjczNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data visualization"
+    }
+  ]
+}
