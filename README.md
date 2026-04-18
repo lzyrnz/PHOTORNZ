@@ -1,6 +1,6 @@
 # 📸 PHOTORNZ | Elite Studio Suite
 
-![Session Active](https://picsum.photos/seed/photornz-studio-white/1200/400)
+![NETLIFY LINK](https://photornz.netlify.app/)
 
 **PHOTORNZ** is a high-performance, architect-driven digital photobooth engine. Designed for the elite event space, it fuses technical precision with a visceral studio aesthetic, delivering a zero-compromise post-production workflow directly in the browser.
 
