@@ -1,5 +1,52 @@
-# Firebase Studio
+# 📸 PHOTORNZ | Elite Studio Suite
 
-This is a NextJS starter in Firebase Studio.
+![Session Active](https://picsum.photos/seed/photornz-studio-white/1200/400)
 
-To get started, take a look at src/app/page.tsx.
+**PHOTORNZ** is a high-performance, architect-driven digital photobooth engine. Designed for the elite event space, it fuses technical precision with a visceral studio aesthetic, delivering a zero-compromise post-production workflow directly in the browser.
+
+---
+
+## 💎 The Experience
+
+### 🛰️ The Entrance (Pure Capture)
+The arrival experience features a perfectly centered, kinetic typography system. Every letter of the **PURE CAPTURE** headline is powered by a staggered "Camera Click" animation, simulating a high-speed mechanical burst. A roaming **Optical Link** drifts through the 3D space, acting as your tactile gateway to the stage.
+
+### 🎭 Studio Stage
+A robust, integrated console for high-fidelity capture.
+- **Grid Architecture**: Choose from multiple layout configurations (Solo, Quad, Film Strip, Director).
+- **Optical Linkage**: Real-time camera sensor integration with mirroring and landscape controls.
+- **Rhythmic Stepper**: A non-obstructive navigation system that tracks your progress from layout to finalization.
+
+### 🎞️ The Darkroom (Post-Process)
+A professional-grade editing suite for composite generation.
+- **Surface Textures**: Upload custom background images or select from curated studio palettes.
+- **Typography Engine**: Deep control over font-family, size, letter-spacing, and color for high-impact session titles.
+- **Synthesis Engine**: Real-time rendering of PNG composites for local archival or digital sync.
+
+---
+
+## 🛠️ Technical Synthesis
+
+Built with a zero-compromise tech stack for speed and precision:
+
+- **Next.js 15 (App Router)**: The high-performance backbone for the modern web.
+- **Tailwind CSS**: Utility-first styling with hardware-accelerated animations.
+- **ShadCN UI**: Elite, accessible component architecture.
+- **Lucide Icons**: High-fidelity vector iconography.
+- **GPU Animations**: Custom CSS keyframes for 3D roaming and kinetic typography.
+
+---
+
+
+---
+
+## 👤 Architect
+
+**Renze Alano**  
+[LinkedIn](https://www.linkedin.com/in/renze-alano-39019a289/) | [GitHub](https://github.com/lzyrnz)
+
+---
+
+## ⚖️ Protocol
+
+© 2026 PHOTORNZ Studios. Built for the pursuit of absolute digital craft.
